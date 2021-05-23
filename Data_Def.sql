@@ -99,7 +99,7 @@ DROP TABLE IF EXISTS `rosters`;
 CREATE TABLE `rosters` (
   `playerTeamID` int(11) NOT NULL AUTO_INCREMENT,
   `playerID` int(11),
-   FOREIGN KEY (playerID) REFERENCES players(playerID),
+   FOREIGN KEY (playerID) REFERENCES players(playerID) ON DELETE SET NULL,
   `teamID` int(11),
    FOREIGN KEY (teamID) REFERENCES teams(teamID),
   PRIMARY KEY (`playerTeamID`),
