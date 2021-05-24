@@ -47,9 +47,9 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `teams`;
 
 CREATE TABLE `teams` (
-  `teamID` int(11) NOT NULL AUTO_INCREMENT,
+  `teamID` int(11) AUTO_INCREMENT,
   `leagueID` int(11),
-   FOREIGN KEY (leagueID) REFERENCES leagues(leagueID),
+   FOREIGN KEY (leagueID) REFERENCES leagues(leagueID) ON DELETE SET NULL,
   `teamName` varchar(255) NOT NULL,
   `wins` int(11) NOT NULL,
   `losses` int(11) NOT NULL,
@@ -72,7 +72,7 @@ DROP TABLE IF EXISTS `games`;
 CREATE TABLE `games` (
   `gameID` int(11) NOT NULL AUTO_INCREMENT,
   `leagueID` int(11),
-   FOREIGN KEY (leagueID) REFERENCES leagues(leagueID),
+   FOREIGN KEY (leagueID) REFERENCES leagues(leagueID) ON DELETE SET NULL,
   `team1ID` int(11),
    FOREIGN KEY (team1ID) REFERENCES teams(teamID),
   `team2ID` int(11),
