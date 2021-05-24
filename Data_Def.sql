@@ -61,7 +61,7 @@ CREATE TABLE `teams` (
 
 LOCK TABLES `teams` WRITE;
 
-INSERT INTO `teams` VALUES (1,1,'Tanoak', 0, 4), (2,1,'Streambank Blazingstar', 40, 0);
+INSERT INTO `teams` VALUES (1,1,'Tanoak', 0, 4), (2,1,'Streambank Blazingstar', 40, 0), (3,1,'Protein', 2, 2);
 
 UNLOCK TABLES;
 
@@ -88,7 +88,7 @@ CREATE TABLE `games` (
 
 LOCK TABLES `games` WRITE;
 
-INSERT INTO `games` VALUES (1,1,1,2, 'Memphis', '2021-05-03', '10:30', 0), (2,1,1,2, 'Dallas', '2021-05-01', '10:30', 1);
+INSERT INTO `games` VALUES (1,1,1,2, 'Memphis', '2021-05-03', '10:30', 0), (2,1,1,2, 'Dallas', '2021-05-01', '10:30', 1), (3,1,1,2, 'Las Vegas', '2021-05-01', '10:30', 1);
 
 UNLOCK TABLES;
 
