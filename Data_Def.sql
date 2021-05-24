@@ -3,7 +3,7 @@
 DROP TABLE IF EXISTS `leagues`;
 
 CREATE TABLE `leagues` (
-  `leagueID` int(11) NOT NULL AUTO_INCREMENT,
+  `leagueID` int(11) AUTO_INCREMENT,
   `leagueName` varchar(255) NOT NULL,
   `sport` varchar(255) NOT NULL,
   `gender` varchar(255) NOT NULL,
