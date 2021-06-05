@@ -17,7 +17,9 @@ CREATE TABLE `leagues` (
 
 LOCK TABLES `leagues` WRITE;
 
-INSERT INTO `leagues` VALUES (1,'Rippers','hockey','male','professional','2020-07-07', '2020-07-28'),(2,'Softy','softball','female','amatuer','2021-04-05', '2021-11-28'),(3,'Kicky','kickball','co-ed','amateur','2020-07-07', '2020-07-28'),(4,'Sprinters','running','co-ed','varsity','2020-07-07', '2020-07-28'),(5,'Squirts','Waterpolo','male','professional','2020-07-07', '2020-07-28');
+INSERT INTO `leagues` VALUES (1,'Rippers','Hockey','Female','Intermediate','2021-07-07', '2022-07-28'),
+                              (2,'Kicky','Kickball','Co-Ed','Recreational','2021-08-07', '2022-08-28'),
+                              (3,'Squirts','Waterpolo','Male','Competitive','2021-09-07', '2022-09-28');
 
 UNLOCK TABLES;
 
@@ -39,7 +41,24 @@ CREATE TABLE `players` (
 
 LOCK TABLES `players` WRITE;
 
-INSERT INTO `players` VALUES (1,'Jimmy','Lipe','male', '1994-04-20', 'littlelipey@jim.com', '760-333-3333'),(2,'BIG','VIN','male', '2020-07-28', 'BigVinWins@aol.com', '760-333-3333'),(3,'Little','K','female', '2020-07-28', 'lk@lk.com', '760-333-3333');
+INSERT INTO `players` VALUES (1,'Jimmy','Lipe','Male', '1994-04-20', 'littlelipey@jim.com', '760-333-3333'),
+                            (2,'BIG','VIN','Male', '1988-07-28', 'BigVinWins@aol.com', '760-333-3333'),
+                            (3,'Little','K','Female', '1989-07-28', 'lk@lk.com', '760-333-3333'),
+                            (4,'Summer','Silent','Female', '1987-01-28', 'ss@laol.com', '760-518-3333'),
+                            (5,'Doggy','Bone','Male', '1988-11-18', 'db@gmail.com', '333-321-1234'),
+                            (6,'Wayne','Greene','Male', '1928-10-18', 'wg@gmail.com', '333-321-2121'),
+                            (7,'Brayana','Burnett','Female', '1991-10-18', 'bb@gmail.com', '123-321-3333'),
+                            (8,'Maria','Pineda','Female', '1979-10-18', 'mp@gmail.com', '555-321-3333'),
+                            (9,'Bruce','Fields','Male', '1985-03-18', 'bf@gmail.com', '333-515-3333'),
+                            (10,'Lamont','Freeman','Male', '1989-04-18', 'lf@gmail.com', '333-321-3366'),
+                            (11,'Laila','Goodwin','Female', '1999-05-02', 'lg@gmail.com', '888-321-3333'),
+                            (12,'Lizeth','Everett','Female', '1998-09-14', 'le@gmail.com', '999-321-3333'),
+                            (13,'Anthony','Walton','Male', '1988-07-18', 'aw@gmail.com', '787-321-3333'),
+                            (14,'Colt','Parrish','Male', '1987-02-18', 'cp@gmail.com', '333-321-8888'),
+                            (15,'Kenna','Wade','Female', '1995-06-09', 'kw@gmail.com', '541-321-3333'),
+                            (16,'Aileen','Wolfe','Female', '1992-12-18', 'aw@gmail.com', '333-874-3333'),
+                            (17,'Derek','Archer','Male', '1950-04-04', 'da@gmail.com', '555-321-6969'),
+                            (18,'Arabella','Villarreal','Female', '1993-08-08', 'av@gmail.com', '123-321-4444');
 
 UNLOCK TABLES;
 
@@ -61,7 +80,15 @@ CREATE TABLE `teams` (
 
 LOCK TABLES `teams` WRITE;
 
-INSERT INTO `teams` VALUES (1,1,'Tanoak', 0, 4), (2,1,'Streambank Blazingstar', 40, 0), (3,1,'Protein', 2, 2);
+INSERT INTO `teams` VALUES (1,1,'Ice Queens', 0, 4), 
+                          (2,1,'Score Hackers', 40, 0), 
+                          (3,2,'Protein Bros', 2, 2),
+                          (4,2,'Tooth Collectors', 6, 1),
+                          (5,3,'Mavericks', 15, 0),
+                          (6,3,'Carlsbads', 0, 15),
+                          (7,1,'Dr. Freeze', 3, 0),
+                          (8,2,'Ball Hogs', 0, 3),
+                          (9,3,'Sharks', 22, 5);
 
 UNLOCK TABLES;
 
@@ -88,7 +115,9 @@ CREATE TABLE `games` (
 
 LOCK TABLES `games` WRITE;
 
-INSERT INTO `games` VALUES (1,1,1,2, 'Memphis', '2021-05-03', '10:30', 0), (2,1,1,2, 'Dallas', '2021-05-01', '10:30', 1), (3,1,1,2, 'Las Vegas', '2021-05-01', '10:30', 1);
+INSERT INTO `games` VALUES (1,1,1,2, 'Memphis', '2021-05-03', '10:30', 0), 
+                          (2,2,3,4, 'Dallas', '2021-05-01', '10:30', 1), 
+                          (3,3,5,6, 'Las Vegas', '2021-05-01', '10:30', 1);
 
 UNLOCK TABLES;
 
@@ -109,6 +138,9 @@ CREATE TABLE `rosters` (
 
 LOCK TABLES `rosters` WRITE;
 
-INSERT INTO `rosters` VALUES (1,1,1), (2,2,2), (3,3,2);
+INSERT INTO `rosters` VALUES (1,1,1), 
+                            (2,2,2), 
+                            (3,3,2),
+                            (4,4,3);
 
 UNLOCK TABLES;
