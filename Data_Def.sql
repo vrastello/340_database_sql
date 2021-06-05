@@ -19,7 +19,7 @@ LOCK TABLES `leagues` WRITE;
 
 INSERT INTO `leagues` VALUES (1,'Rippers','Hockey','Female','Intermediate','2021-07-07', '2022-07-28'),
                               (2,'Kicky','Kickball','Co-Ed','Recreational','2021-08-07', '2022-08-28'),
-                              (3,'Squirts','Waterpolo','Male','Competitive','2021-09-07', '2022-09-28');
+                              (3,'Squirts','Beach Volleyball','Male','Competitive','2021-09-07', '2022-09-28');
 
 UNLOCK TABLES;
 
